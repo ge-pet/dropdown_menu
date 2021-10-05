@@ -4,42 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Dropdown Menu</title>
-    <style>
-      * {
-        font-family: monospace;
-      }
-      .dropdown-list {
-        display: none;
-      }
-      /* .testclass:hover > .dropdown-list {
-        display: block;
-      } */
-      li::selection {
-        color: black;
-        background-color: yellow;
-      }
-      .testclass:hover {
-        cursor: pointer;
-      }
-    </style>
   </head>
   <body>
-    <ol>
-      <li class="testclass">
-        First Item
-        <ol class="dropdown-list" style="display: none">
-          <li class="dropdown-list-item">
-            <a href="https://www.google.com" target="_blank"
-              >First item in the second level</a
-            >
-          </li>
-        </ol>
-      </li>
-      <li>Second Item</li>
-      <li>Third Item</li>
-    </ol>
+    <div class="container">
+      <ol>
+        <li class="testclass" id="test">
+          First Item
+          <ol class="dropdown-list">
+            <li>
+              <a href="https://www.google.com" target="_blank"
+                >First item in the second level</a
+              >
+            </li>
+          </ol>
+        </li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+      </ol>
+    </div>
   </body>
 </html>
 

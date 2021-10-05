@@ -1,0 +1,23 @@
+* {
+  font-size: 0.7rem;
+  font-family: monospace;
+  background-color: rgb(195, 179, 163);
+  color: rgb(23, 55, 161);
+}
+/* .dropdown-list,
+#test {
+  display: none;
+} */
+
+li::selection {
+  color: black;
+  background-color: yellow;
+}
+.testclass:hover {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
