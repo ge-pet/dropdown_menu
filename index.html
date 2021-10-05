@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+    <style>
+      * {
+        font-family: monospace;
+      }
+      .dropdown-list {
+        display: none;
+      }
+      /* .testclass:hover > .dropdown-list {
+        display: block;
+      } */
+      li::selection {
+        color: black;
+        background-color: yellow;
+      }
+      .testclass:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li class="testclass flev">
+        AAAAAAAAAAAAAA
+        <ol class="dropdown-list" style="display: none">
+          <li class="dropdown-list-item">
+            <a href="https://www.google.com" target="_blank">xxxxxxxxx</a>
+          </li>
+        </ol>
+      </li>
+      <li class="flev">hi</li>
+      <li class="flev">boo</li>
+    </ol>
+  </body>
+</html>
+
+<!-- <li class="dropdown-list-item testclass">yyyyyyyyyyyyyyyyyyyyy</li>
+            <ol class="dropdown-list" style="display: none">
+            <li>this is a test</li>
+          </ol>
+        </ol>
+      </li> -->
