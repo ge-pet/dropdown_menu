@@ -1,18 +1,20 @@
-var click = document.getElementById("test");
+var clicks = document.querySelectorAll(".click");
 
-var dropdown = document.getElementsByClassName("dropdown-list");
-var dropdown2 = document.querySelectorAll(".dropdown-list");
+var dropdowns = document.querySelectorAll(".dropdown-list");
 
-for (s of dropdown2) {
+for (var s of dropdowns) {
+  s.style.marginLeft = "2em";
   s.style.display = "none";
 }
 
-click.addEventListener("click", () => {
-  for (s of dropdown2) {
-    if (s.style.display === "none") {
-      s.style.display = "block";
+for (var click of clicks) {
+  click.onclick = (e) => {
+    const dropdown = e.target.nextElementSibling;
+
+    if (dropdown.style.display === "none") {
+      dropdown.style.display = "block";
     } else {
-      s.style.display = "none";
+      dropdown.style.display = "none";
     }
-  }
-});
+  };
+}

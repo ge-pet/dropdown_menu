@@ -10,26 +10,23 @@
   </head>
   <body>
     <div class="container">
-      <ol>
-        <li class="click" id="test">
-          First Item
-          <ol class="dropdown-list">
-            <li>
-              <a href="https://www.google.com" target="_blank"
-                >First Item in the second level</a
-              >
-            </li>
-            <!-- <li class="click">
-              Second Item in the second level
-              <ol class="dropdown-list">
-                <li>First Item in the third level</li>
-              </ol>
-            </li> -->
-          </ol>
-        </li>
-        <li>Second Item</li>
-        <li>Third Item</li>
-      </ol>
+      <div class="flev">
+        <div>
+          <p class="click">1. First Item</p>
+          <div class="dropdown-list" id="test">
+            <p class="click">1.1. First Item in the second level</p>
+            <div class="dropdown-list">
+              <p>1.1.a. First Item in the third level</p>
+              <p>1.1.b. Second Item in the third level</p>
+            </div>
+            <p>1.2. Second Item in the second level</p>
+          </div>
+        </div>
+
+        <p>2. Second Item</p>
+        <p>3. Third Item</p>
+        <p>4. Fourth Item</p>
+      </div>
     </div>
   </body>
 </html>

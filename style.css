@@ -14,10 +14,11 @@ li::selection {
 }
 
 li {
-  margin: 1.2em;
+  margin: 1em;
 }
 
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
